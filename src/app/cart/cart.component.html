@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="cart-wrap">
+      <table *ngIf="current_cart" style="width:100%">
+        <caption class="caption">Current Cart</caption>
+        <tr>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr *ngFor="let cart of cart_list">
+          <td>{{cart.product_name}}</td>
+          <td>{{cart.quantity}}</td>
+          <td>{{cart.total_product_price + ' SAR'}}</td>
+        </tr>
+        <tr >
+              <div class="total-price">
+                    Total price:  {{total_price + ' SAR'}}
+              </div>
+        </tr>
+        <tr *ngIf="total_price > 0">
+          <td  style="border: none">
+            <button (click)="goPayment()" class="btn">Proceed to payment</button>
+          </td>
+          <td style="border: none">
+            <button (click)="clear_cart()" class="btn">Clear cart</button>
+          </td>
+        </tr>
+      </table>
+      <div *ngIf="payment" style="width:100%">
+            <div class="payment-item-wrap">
+              <input class="payment-item" type="number" placeholder="Card Number">
+            </div>
+            <div class="payment-item-wrap">
+              <input class="payment-item-2" type="number" placeholder="Month">
+              <input class="payment-item-2" type="number" placeholder="Year">
+            </div>
+            <div class="payment-item-wrap">
+              <input class="payment-item-3" type="text" placeholder="Name on card">
+              <input class="payment-item-4" type="number" placeholder="CSV">
+            </div>
+            <div class="payment-item-wrap">
+              <button (click)="goRecipt()" class="payment-item btn">Pay Now</button>
+            </div>
+      </div>
+      <div *ngIf="receipt" style="width:100%; height: 100%">
+              <div class="receipt_title">
+                Confirmation Receipt
+              </div>
+              <div class="receipt-wrap">
+                  <div class="actual-receipt">
+                        <div>Address: Riyadh, Saudi Arabia</div>
+                        <div>Tel: 0112358899</div>
+                        <div>{{getDate()}}</div>
+                        <div *ngFor="let cart of cart_list">
+                          <div class="receipt-items">
+                            <div class="receipt-item">{{cart.product_name}}</div>
+                            <div class="receipt-item">{{cart.total_product_price + ' SAR'}}</div>
+                          </div>
+                        </div>
+                        <div>
+                         Price: {{total_price + ' SAR'}}
+                        </div>
+                        <div>
+                          VAT: {{getVAT_only() + ' SAR'}}  (15%)
+                        </div>
+                        <div>
+                          Total price: {{getVAT() + ' SAR'}}
+                        </div>
+                  </div>
+              </div>
+      </div>
+    </div>
+</div>
+
+

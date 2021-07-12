@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrap {
+  width: 100%;
+  height: 70%;
+}
+
+.login-item-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.login-item input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #163F37;
+  border: none;
+  border-bottom: #163F37 solid 2px;
+  outline: none;
+  font-family: 'El Messiri', sans-serif;
+  padding: 20px;
+}
+
+.login-item input:focus {
+  border: none;
+  border-bottom: #163F37 solid 2px;
+}
+
+.login-item div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'El Messiri', sans-serif;
+  padding: 10px;
+  background-color: #163F37;
+  margin-top: 20px;
+}
+
+.error {
+  background-color: lightcoral;
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'El Messiri', sans-serif;
+  margin-top: 20px;
+}

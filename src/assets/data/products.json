@@ -1,0 +1,137 @@
+[
+  {
+    "id": "1",
+    "product_name" : "Apple",
+    "quantity" : 95,
+    "rate": "4.5/5.0",
+    "img": "../assets/img/apple.png",
+    "description": "An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus",
+    "price": 1
+  },
+  {
+    "id": "2",
+    "product_name" : "Orange",
+    "quantity" : 60,
+    "rate": "4.0/5.0",
+    "img": "../assets/img/orange.jpg",
+    "description": "The orange is the fruit of various citrus species in the family Rutaceae, it primarily refers to Citrus × sinensis, which is also called sweet orange, to distinguish it from the related Citrus × aurantium, referred to as bitter orange. The sweet orange reproduces asexually, varieties of sweet orange arise through mutations",
+    "price": 2
+  },
+  {
+    "id": "3",
+    "product_name" : "Bread",
+    "quantity" : 25,
+    "rate": "5.0/5.0",
+    "img": "../assets/img/bread.png",
+    "description": "Bread is a staple food prepared from a dough of flour and water, usually by baking. Throughout recorded history, it has been a prominent food in large parts of the world. It is one of the oldest human-made foods, having been of significant importance since the dawn of agriculture",
+    "price": 5
+  },
+  {
+    "id": "4",
+    "product_name" : "Capsicums",
+    "quantity" : 35,
+    "rate": "4.0/5.0",
+    "img": "../assets/img/capsicums.png",
+    "description": "Capsicums are native to tropical America. They then spread to Europe but they have only been available in New Zealand for the past 30-40 years.",
+    "price": 4
+  },
+  {
+  "id": "5",
+  "product_name" : "Carrots",
+  "quantity" : 40,
+  "rate": "4.5/5.0",
+  "img": "../assets/img/carrots.png",
+  "description": "Carrots have been a staple in many countries for thousands of years although it is only since the 16th century that they have been orange.",
+   "price": 3
+  },
+  {
+    "id": "6",
+    "product_name" : "Cucumber",
+    "quantity" : 80,
+    "rate": "5.0/5.0",
+    "img": "../assets/img/cucumber.png",
+    "description": "Cucumbers are thought to have originated in Southern Asia and were very popular in India.",
+    "price": 2
+  },
+  {
+    "id": "7",
+    "product_name" : "Ginger",
+    "quantity" : 10,
+    "rate": "4.8/5.0",
+    "img": "../assets/img/ginger.png",
+    "description": "Ginger originated in the southern provinces of China and India, where it has been used in food and medicines for over 5,000 years.",
+    "price": 1
+  },
+  {
+    "id": "8",
+    "product_name" : "Melons",
+    "quantity" : 15,
+    "rate": "4.2/5.0",
+    "img": "../assets/img/melons.png",
+    "description": "There are hundreds of varieties of melons, however, the four most popular in New Zealand are watermelon, honeydew, prince melon and rockmelon",
+    "price": 8
+  },
+  {
+    "id": "9",
+    "product_name" : "Mushrooms",
+    "quantity" : 29,
+    "rate": "3.8/5.0",
+    "img": "../assets/img/mushrooms.png",
+    "description": "Mushrooms have been eaten in Europe, Russia, China and Japan for thousands of years.",
+    "price": 10
+  },
+  {
+    "id": "10",
+    "product_name" : "Onions",
+    "quantity" : 45,
+    "rate": "4.7/5.0",
+    "img": "../assets/img/onions.png",
+    "description": "Onions are the most used flavouring vegetable in the world.",
+    "price": 1
+  },
+  {
+    "id": "11",
+    "product_name" : "Banana",
+    "quantity" : 22,
+    "rate": "4.6/5.5",
+    "img": "../assets/img/banana.jpg",
+    "description": "A banana is a curved, yellow fruit with a thick skin and soft sweet flesh. If you eat a banana every day for breakfast, it gives all your everyday vitamins",
+    "price": 6
+  },
+  {
+    "id": "12",
+    "product_name" : "Radishes",
+    "quantity" : 32,
+    "rate": "3.5/5.0",
+    "img": "../assets/img/radishes2.png",
+    "description": "The name radish is derived from the Latin words ‘radix’ meaning root, and ‘raphanus’ meaning easily grown.",
+    "price": 4
+  },
+  {
+    "id": "13",
+    "product_name" : "Spring-onions",
+    "quantity" : 19,
+    "rate": "4.3/5.0",
+    "img": "../assets/img/spring-onions.png",
+    "description": "Spring onions belong to the onion family and in some countries they are known as scallions, bunching or green onions.",
+    "price": 1
+  },
+  {
+    "id": "14",
+    "product_name" : "Tomatoes",
+    "quantity" : 100,
+    "rate": "4.6/5.0",
+    "img": "../assets/img/tomatoes.png",
+    "description": "Tomatoes are native to South America and were originally grown for their decorative purposes.",
+    "price": 3
+  },
+  {
+    "id": "15",
+    "product_name" : "Turmeric",
+    "quantity" : 40,
+    "rate": "4.1/5.0",
+    "img": "../assets/img/Turmeric.jpg",
+    "description": "Turmeric originated from the Indian subcontinent and Southeast Asia, and it requires subterranean temperatures and plentiful rain.",
+    "price": 6
+  }
+]

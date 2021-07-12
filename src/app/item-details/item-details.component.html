@@ -1,0 +1,23 @@
+<div class="container">
+      <div class="details-wrap">
+        <div class="item-img">
+          <img src="{{img}}" alt="image">
+        </div>
+        <div class="item-details">
+                <div class="item-details-wrap">
+                  <div><span style="font-weight: bold">Product Name:</span>  {{product_name}}</div>
+                  <div><span style="font-weight: bold">Description:</span>  {{description}}</div>
+                  <div><span style="font-weight: bold">Rate: </span> {{rate}}</div>
+                  <div><span style="font-weight: bold">Quantity:</span>  {{quantity}}</div>
+                  <div><span style="font-weight: bold">Price:</span>  {{price + ' SAR'}}</div>
+                  <div>
+                    <input class="details-input" type="number" placeholder="Type in the quantity" [(ngModel)]="selected_quantity">
+                    <button (click)="AddCart()" class="details-button">Add to cart</button>
+                  </div>
+                  <div style="margin-top: 10px">
+                    <div [class]="alert_style">{{alert}}</div>
+                  </div>
+                </div>
+        </div>
+      </div>
+</div>

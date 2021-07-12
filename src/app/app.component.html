@@ -1,0 +1,54 @@
+<div class="app">
+    <div class="header">
+        <div class="header-logo">
+          <img src="../assets/img/logo.png" alt="logo">
+        </div>
+        <div class="header-text">
+          <div>
+            Kitchen Story
+          </div>
+        </div>
+      <div class="header-home">
+        <i style="cursor: pointer" (click)="goHome()" class="gg-home"></i> <div (click)="goHome()" style="margin-left: 5px; cursor: pointer">Home</div>
+      </div>
+      <div class="header-home">
+        <i style="cursor: pointer" (click)="goLogin()" class="gg-log-in"></i> <div (click)="goLogin()" style="margin-left: 20px; cursor: pointer">{{login_status}}</div>
+      </div>
+      <div *ngIf="manage_btn_show" class="header-home">
+        <i style="cursor: pointer" (click)="goManage()" class="gg-readme"></i> <div (click)="goManage()" style="margin-left: 20px; cursor: pointer">Manage</div>
+      </div>
+      <div class="header-cart">
+        <i style="cursor: pointer" (click)="goCart()"  class="gg-shopping-cart"></i> <div (click)="goCart()" style="margin-left: 10px; cursor: pointer"> Cart</div>
+      </div>
+    </div>
+    <div *ngIf="isHome" class="body">
+      <div class="body-search">
+        <div class="search-icon">
+        </div>
+        <div class="search-input">
+          <div>Search an item: </div><input type="text" placeholder="Type an item that you want to search for ..." [(ngModel)]="search_value"  (input)="search()">
+        </div>
+      </div>
+      <div class="body-content">
+          <div class="body-item" *ngFor="let product of products">
+            <div class="body-item-content">
+              <img src="{{product.img}}" alt="{{product.product_name}}">
+            </div>
+            <div class="body-item-content-details">
+              <div>{{product.product_name}}</div>
+              <div>{{product.rate}}</div>
+              <div (click)="goDetails(product)" class="body-details">Show Details >></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div *ngIf="isOthers" class="body-others">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+        <div>
+          All rights reserved 2021 &copy; | Saleh Alajmi
+        </div>
+    </div>
+</div>
+
